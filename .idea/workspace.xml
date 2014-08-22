@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc6761b5-b216-4a78-bd07-298edf2781ef" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/View/Emails/html/customer_report.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/MerchantsController.php" afterPath="$PROJECT_DIR$/app/Controller/MerchantsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_bank_merchants" afterPath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_bank_merchants" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_contacts" afterPath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_contacts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_list" afterPath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_list" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_merchants" afterPath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_merchants" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_stores" afterPath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_stores" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_terminals" afterPath="$PROJECT_DIR$/app/tmp/cache/models/myapp_cake_model_default_crgtesti_luckybuysretailers_terminals" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="luckybuysretailers.iws" />
@@ -38,10 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MerchantsController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MerchantsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/MerchantsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="466" column="35" selection-start="14187" selection-end="14187" vertical-scroll-proportion="0.5397112" vertical-offset="7623" max-vertical-offset="8449">
+            <state line="466" column="35" selection-start="14183" selection-end="14187" vertical-scroll-proportion="-11.5" vertical-offset="7623" max-vertical-offset="8449">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer_report.ctp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/View/Emails/html/customer_report.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="593">
               <folding />
             </state>
           </provider>
@@ -466,6 +467,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebProjects\xampp\htdocs\Naveed\luckybuysretailers\naveed_luckybuysretailers\app\View\Emails\html" />
       <recent name="D:\WebProjects\xampp\htdocs\Naveed\luckybuysretailers\naveed_luckybuysretailers\app\View\Emails\text" />
     </key>
   </component>
@@ -530,7 +532,11 @@
       <created>1408696812219</created>
       <updated>1408696812219</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update">
+      <created>1408696872881</created>
+      <updated>1408696872881</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -643,7 +649,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/MerchantsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="466" column="35" selection-start="14187" selection-end="14187" vertical-scroll-proportion="0.5397112" vertical-offset="7623" max-vertical-offset="8449">
+        <state line="466" column="35" selection-start="14183" selection-end="14187" vertical-scroll-proportion="-11.5" vertical-offset="7623" max-vertical-offset="8449">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Emails/html/customer_report.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="593">
           <folding />
         </state>
       </provider>

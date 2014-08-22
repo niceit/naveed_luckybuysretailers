@@ -464,7 +464,7 @@ class MerchantsController extends AppController {
         $mail->template('customer_report')
                 ->from(array('support@luckycashretailers.com.au'))
                 ->attachments(array($csvFile))
-                ->emailFormat('test')
+                ->emailFormat('html')
                 ->to(array('na@cashrg.com.au', 'divand553@gmail.com'))
                 ->subject('Daily new customers report');
         $mail->send();
