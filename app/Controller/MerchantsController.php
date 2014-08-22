@@ -265,6 +265,7 @@ class MerchantsController extends AppController {
 					$data = $this->request->data;
 
 					$data['Merchant']['payment_unique_id'] = $payment_unique_id;
+                    $data['Merchant']['report_status'] = 0;
 					if($saved = $this->Merchant->save($data)) {
 						if(!$this->add_merchant($data, $payment_unique_id)) {
 							$this->log($post_data_to_log, 'failed_to_create_payer');
@@ -399,4 +400,92 @@ class MerchantsController extends AppController {
 		));
 		$this->set(compact('merchant'));
 	}
+
+    /*
+     * This function for cron job
+     * Will send new customers everyday to admin email
+     * */
+    public function newCustomers(){
+        //Fetch new customers
+        $customers = $this->Merchant->find('all', array(
+            'conditions' => array(
+                "DATE_FORMAT(MerChant.created, '%m/%d/%Y')"  => date("m/d/Y"),
+                'OR'                => array('Merchant.report_status = 0', 'Merchant.report_status' => null)
+            ),
+            'recursive' => false
+        ));
+
+        $csvFile = $this->createCSVFile(date("m_d_Y"));
+
+        $fileHandle = fopen($csvFile, 'w');
+        $contentHeader = array("Merchant ID", "Bussiness name", "ABN", "Trading name",
+                                "Address", "Suburb", "State", "Postcode", "Business type",
+                                "Business category", "Commencement date", "Bonus Cash Amount",
+                                "Account Name", "BSB", "Account number", "Date"
+                                );
+        $fileContent = array();
+        $fileContent['header'] = implode(',', $contentHeader);
+        if ($customers){
+            foreach ($customers as $key => $customer){
+                $fileContent[$key] = implode(',', array(
+                    $customer['Merchant']['id'],
+                    $customer['Merchant']['business_name'],
+                    $customer['Merchant']['abn'],
+                    $customer['Merchant']['trading_name'],
+                    $customer['Merchant']['address'],
+                    $customer['Merchant']['suburb'],
+                    $customer['Merchant']['state'],
+                    $customer['Merchant']['postcode'],
+                    $customer['Merchant']['business_type'],
+                    $customer['Merchant']['business_category'],
+                    $customer['Merchant']['commencement_date'],
+                    $customer['Merchant']['bonus_cash_amount'],
+                    $customer['Merchant']['account_name'],
+                    $customer['Merchant']['bsb'],
+                    $customer['Merchant']['account_number'],
+                    $customer['Merchant']['created']
+                ));
+
+                //Set report flag is true
+                $customer['Merchant']['report_status'] = 1;
+                $this->Merchant->id = $customer['Merchant']['id'];
+                $this->Merchant->save($customer);
+            }
+        }
+        $fileContent = implode("\n", $fileContent);
+
+        fwrite($fileHandle, $fileContent, strlen($fileContent));
+
+        fclose($fileHandle);
+
+        //Init email will send to admin
+        App::uses("CakeEmail", "Network/Email");
+        $mail = new CakeEmail();
+        $mail->from(array('support@luckycashretailers.com.au'))
+                ->attachments(array($csvFile))
+                ->emailFormat('html')
+                ->to(array('na@cashrg.com.au', 'divand553@gmail.com'))
+                ->subject('Daily new customers report')
+                ->message('Please view in attchment for detail file report');
+        $mail->send();
+
+
+        $this->autoRender = false;
+    }
+
+    private function createCSVFile($date){
+        $csvDir = WWW_ROOT . 'files/new_customers/';
+        $baseCsvFileName = $date . '_customers';
+        $csvFileExt = '.csv'; //For csv format file
+
+        $csvFileName = $baseCsvFileName;
+
+        $i = 1;
+        do{
+            $csvFileName = $baseCsvFileName . "_" . $i++;
+        }
+        while(file_exists($csvDir . $csvFileName . $csvFileExt));
+
+        return $csvDir . $csvFileName . $csvFileExt;
+    }
 }
