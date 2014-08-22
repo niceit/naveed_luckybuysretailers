@@ -452,6 +452,10 @@ class MerchantsController extends AppController {
                 $this->Merchant->save($customer);
             }
         }
+        else{
+            $fileContent[0] = 'No record';
+        }
+
         $fileContent = implode("\n", $fileContent);
 
         fwrite($fileHandle, $fileContent, strlen($fileContent));
