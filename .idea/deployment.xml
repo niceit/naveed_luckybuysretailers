@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="HaqDiago">
+  <component name="PublishConfigData" serverName="LuckyRetailers" uploadOnCheckin="84df265f-2d95-4ff5-9806-3416950cfcab">
     <serverData>
       <paths name="HaqDiago">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="Naveed/luckybuysretailers" />
+            <mapping local="$PROJECT_DIR$" web="Naveed/luckybuysretailers/naveed_luckybuysretailers" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="LuckyRetailers">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="LuckyRetailers" />
   </component>
 </project>
 
