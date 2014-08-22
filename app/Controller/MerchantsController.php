@@ -409,7 +409,7 @@ class MerchantsController extends AppController {
         //Fetch new customers
         $customers = $this->Merchant->find('all', array(
             'conditions' => array(
-                "DATE_FORMAT(MerChant.created, '%m/%d/%Y')"  => date("m/d/Y"),
+                "DATE_FORMAT(Merchant.created, '%m/%d/%Y')"  => date("m/d/Y"),
                 'OR'                => array('Merchant.report_status = 0', 'Merchant.report_status' => null)
             ),
             'recursive' => false
