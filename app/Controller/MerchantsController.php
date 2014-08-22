@@ -460,7 +460,7 @@ class MerchantsController extends AppController {
 
         //Init email will send to admin
         App::uses("CakeEmail", "Network/Email");
-        $mail = new CakeEmail('text/customer_report');
+        $mail = new CakeEmail('customer_report');
         $mail->from(array('support@luckycashretailers.com.au'))
                 ->attachments(array($csvFile))
                 ->emailFormat('html')
