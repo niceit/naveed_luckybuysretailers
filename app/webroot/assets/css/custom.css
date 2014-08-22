@@ -1,0 +1,619 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size: 6em;
+    font-weight: 800;
+    letter-spacing: -3px;    
+	line-height: 0.8em;
+}
+
+h3 {
+    font-size: 2.8em;
+    font-weight: 400;
+    letter-spacing: -2px;
+    line-height: 2em;
+}
+
+h4 {
+    font-size: 2.3em;
+}
+
+h5 {
+    font-size: 1.8em;
+}
+
+a {
+    color: #003876;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+label {
+    font-weight: 100;    
+}
+
+footer {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #FFF;
+    background-color: #6c6d6f;
+}
+
+footer a {
+    color: #87CEFA;
+}
+
+.navbar {
+	background-color: #FFF;
+    border: none;
+}
+
+.banner-wrapper {
+	margin-top: 50px;
+}
+
+.navbar-nav img:hover {
+    -webkit-transform: rotate(3deg); 
+    -moz-transform: rotate(3deg); 
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg); 
+}
+
+.navbar-toggle {
+    background-color: #000;
+}
+
+.banner-items {
+    position: absolute;
+}
+
+.banner-image {
+	margin: 0px auto;
+	width: 100%;
+    /*box-shadow: 20px 20px 25px #DDD;*/
+}
+
+.banner-text {
+    color: #FFF;
+	padding: 10px;
+	margin: 80px 0px 20px 0px;
+}
+
+.marketing {
+    margin-top: 30px;
+}
+.container{
+	position: relative;
+}
+
+.bi {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.biu {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.blue {
+    color: #3194cc;
+}
+
+.responsive-text {
+    color: #000;
+    padding: 10px;
+    margin: -30px 0px 20px 0px;
+    display: none;
+}
+
+.featurette-image {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.featurette-heading {
+    font-size: 3em;
+    line-height: 0.8em;
+    font-weight: 400;
+}
+
+.featurette-subheading {
+    font-size: 2.6em;
+    line-height: 1em;    
+}
+
+.responsive-box {
+    display: none;
+}
+
+.box-title {
+    text-align: center;
+    padding: 2px 0;
+    color: #FFF;
+    background-color: #451563;
+}
+
+.box-body {
+    color: #888;
+    background-color: #DFDDDE;
+    text-align: center;    
+}
+
+.box-body p {
+    padding-top: 1em;
+    font-size: 1.68em;
+    text-align: center;
+}
+
+.foot {
+    text-align: center;
+    line-height: 1.8em;
+	padding: 30px;
+    height: 500px;
+    margin-bottom: -30px;
+	color: #EEE;
+	background-color: #393939;
+}
+
+.risk {
+    font-size: 2.68em;
+}
+
+.foot a {
+    color: #FFF;
+    font-size: 1.28em;
+    line-height: 5em;
+    text-decoration: none;
+}
+
+.register {
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: solid 3px #fcb715;
+    background-color: #fcb715;
+}
+
+.register:hover {
+    border: solid 3px #d09000;
+    background-color: #d09000;
+}
+
+.tnc {
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: solid 3px #FFF;
+}
+
+.tnc:hover {
+    background-color: #888;
+}
+
+.newline {
+    line-height: 3em;
+    display: none;
+}
+
+.top {
+    margin-top: 10px;
+    float: right;
+}
+
+@media screen and (min-width: 2001px) {
+    .banner-image {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .banner-image {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .banner-image {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .banner-image {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .banner-image {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .banner-image {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .banner-image {
+        max-width: 1200px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .banner-image {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h2 {
+        font-size: 5em;
+    }
+
+    h3 {
+        font-size: 2.6em;
+    }
+
+    h4 {
+        font-size: 2.1em;
+    }
+
+    h5 {
+        font-size: 1.6em;
+    }
+
+    .banner-image {
+        margin-left: 0;
+        max-width: auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2.2em;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    .banner-wrapper {
+        margin-top: 0px;
+    }
+
+    .banner-text {
+        margin-top: 50px;
+    }
+
+    .navbar-brand  {
+        width: 200px;
+    }
+
+    .navbar-nav img {
+        width: 75%;
+    }
+
+    .featurette-divider {
+        margin-top: -20px;
+    }
+
+
+    .featurette-image {
+        text-align: center;
+    }
+
+    .featurette-image img {
+        width: 25%;
+    }
+
+    .featurette-text-one {
+        position: relative;
+        top: 200px;
+    }
+
+    .image-one img {
+        position: relative;
+        top: -330px;
+    }
+
+    .featurette-text-three {
+        position: relative;
+        top: 200px;
+    }
+
+    .image-three img {
+        position: relative;
+        top: -585px;
+    }
+
+    .featurette-text-five {
+        position: relative;
+        top: 180px;
+    }
+
+    .image-five img {
+        position: relative;
+        top: -575px;
+    }
+
+    .responsive-box {
+        display: block;
+    }
+
+    .foot {
+        height: 488px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    h4 {
+        font-size: 1.6em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    .logo {
+        width: 90%;
+    }
+
+    .banner-image {
+        margin-top: 30px;
+    }
+
+    .banner-text {
+        margin-top: 80px;
+    }
+
+    .featurette-text-one {
+        top: 200px;
+    }
+
+    .image-one img {
+        top: -330px;
+    }
+
+    .featurette-text-three {
+        top: 208px;
+    }
+
+    .image-three img {
+        top: -580px;
+    }
+
+    .featurette-text-five {
+        top: 168px;
+    }
+
+    .image-five img {
+        top: -580px;
+    }
+
+    .postcodegroup {
+        margin-top: -60px;
+    }
+
+    .checkboxgroup {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h2 {
+        font-size: 2.68em;
+    }
+
+    h3 {
+        font-size: 1.28em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    input, select {
+        margin-bottom: 0px;
+    }
+
+    .banner-text {
+        margin-top: 50px;
+    }
+
+    .non-mobile {
+        display: none;
+    }
+
+    .responsive-text {
+        display: block;
+    }
+
+    .responsive-text h3 {
+        margin: 0px;
+    }
+
+    .featurette-heading {
+        font-size: 2em;
+        line-height: 0.8em;
+        font-weight: 400;
+    }
+
+    .featurette-subheading {
+        font-size: 1.6em;
+        line-height: 1em;    
+    }
+
+    .featurette-image img {
+        width: 35%;
+    }
+
+    .featurette-text-one {
+        top: 130px;
+    }
+
+    .image-one img {
+        top: -308px;
+    }
+
+    .featurette-text-three {
+        top: 128px;
+    }
+
+    .image-three img {
+        top: -648px;
+    }
+
+    .featurette-text-five {
+        top: 108px;
+    }
+
+    .image-five img {
+        top: -538px;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    h3 {
+        font-size: 1.28em;
+    }
+
+    .foot {
+        height: 588px;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .newline {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .responsive-text h3 {
+        font-size: 1em;
+        letter-spacing: 0px;    
+    }
+
+    .featurette-heading {
+        font-size: 1.6em;
+        letter-spacing: 0px;    
+    }
+
+    .featurette-subheading {
+        font-size: 1.3em;
+    }
+
+    .foot {
+        height: 468px;
+    }
+
+    .foot h5 {
+        margin-top: 40px;
+    }
+
+    .risk {
+        font-size: 1.8em;
+        line-height: 0.1em;
+    }
+    
+    .non-small-mobile {
+        display: none;
+    }
+}
+
+.btn-branded {
+	color: white;
+	background-color: #003876;
+}
+
+.error-message {
+	color: red;
+}
+
+#box-link {
+    background-color: transparent;
+     height: 263px;
+	position: absolute;
+	right: 3%;
+	top: 29%;
+	width: 420px;
+    cursor: pointer;
+}
+#box-link1 {
+    background-color: transparent;
+	height: 38px;
+	position: absolute;
+	right: 40%;
+	top: 79%;
+	width: 201px;
+    cursor: pointer;
+}
+#box-link2 {
+    background-color: transparent;
+    height: 60px;
+	position: absolute;
+	right: 36%;
+	top: 47%;
+	width: 298px;
+    cursor: pointer;
+}
+#box-link3 {
+    background-color: transparent;
+    height: 60px;
+	position: absolute;
+	right: 36%;
+	top: 60%;
+	width: 298px;
+    cursor: pointer;
+}
+#box-link4 {
+    background-color: transparent;
+    height: 60px;
+	position: absolute;
+	right: 36%;
+	top: 73%;
+	width: 298px;
+    cursor: pointer;
+}
+#box-link5 {
+    background-color: transparent;
+     height: 184px;
+	position: absolute;
+	right: 11%;
+	top: 13%;
+	width: 335px;
+    cursor: pointer;
+}

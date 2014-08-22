@@ -1,0 +1,1 @@
+<?=$this->element('merchants/store_fields', array('store_number' => $store_number));?>
